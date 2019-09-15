@@ -37,6 +37,12 @@ public class PlayerController : MonoBehaviour
             count = count + 1;
             SetCountText();
         }
+        if (other.gameObject.CompareTag("5pt"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 5;
+            SetCountText();
+        }
     }
     void SetCountText ()
     {
